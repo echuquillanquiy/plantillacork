@@ -35,17 +35,13 @@
 
     <!--  BEGIN CONTENT PART  -->
     <div id="content" class="main-content">
-        <div class="layout-px-spacing">
-            <div class="row layout-top-spacing">
 
-                @yield('content')
+        @yield('content')
 
-            </div>
-            @include('layouts.theme.footer')
-
-        </div>
     </div>
     <!--  END CONTENT PART  -->
+
+    @include('layouts.theme.footer')
 
 </div>
 <!-- END MAIN CONTAINER -->

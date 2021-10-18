@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\CompaniesController;
+use App\Http\Livewire\PatientsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('pacientes', PatientsController::class);
+Route::get('empresas', CompaniesController::class);

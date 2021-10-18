@@ -5,13 +5,15 @@
 <script src="{{ asset('plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 <script>
+
     $(document).ready(function() {
         App.init();
+
+        $(".basic").select2({
+            dropdownParent: $("#theModal")
+        });
     });
 
-    var ss = $(".basic").select2({
-        tags: true,
-    });
 </script>
 <script src="{{ asset('plugins/highlight/highlight.pack.js') }}"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
@@ -20,7 +22,6 @@
 <!-- END GLOBAL MANDATORY SCRIPTS -->
 
 <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-<script src="{{ asset('assets/js/scrollspyNav.js') }}"></script>
 <script src="{{ asset('plugins/select2/select2.min.js') }}"></script>
 <script src="{{ asset('plugins/select2/custom-select2.js') }}"></script>
 <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
